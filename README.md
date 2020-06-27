@@ -35,6 +35,6 @@ Copyright and License
 ---------------------
 
 Copyright (c) 2020 Hendri
-<http://codelagi/>   
+<http://codelagi.com/>   
 All rights reserved.
 
