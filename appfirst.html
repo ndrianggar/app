@@ -1,0 +1,83 @@
+<html>
+<title>Test Technical Online Bootcamp Batch 17 Kloter 3 DumbWays.id
+</title>
+
+<body>
+    <h1>Hitung Diskon</h1>
+
+    <input type="text" id="colomSatu">
+    <select id="prdk">
+        <option value="A">Barang A</option>
+        <option value="B">Barang B</option>
+        <option value="C">Barang C</option>
+    </select>
+    <input type="submit" onclick="Hitung()" value="Hitung"><br><br>
+
+    <h2>Output</h2>
+    <label> Total harga barang :<input type="text" id="hasil"></label><br>
+    <label> Potongan : <input type="text" id="diskon"></label><br>
+
+    <input type="text" id="ttl">
+
+
+    <h1>Soal 2 </h1>
+
+    <input type="submit" onclick="urutkanArray()" value="Urutkan">
+    <p id="Array"></p>
+    <br>
+
+    <br>
+
+
+    <script>
+        function Hitung() {
+            var KolomP = document.getElementById("colomSatu").value;
+            var produk = document.getElementById("prdk").value;
+            var hasil = document.getElementById("hasil");
+            var diskon = document.getElementById("diskon");
+            var total = document.getElementById("ttl");
+
+            var diskon;
+            var jumlah;
+            var totalall;
+
+            if (produk == "A") {
+                jumlah = KolomP * 4550;
+                dskn = KolomP * 231;
+                totalall = jumlah - dskn;
+            } else if
+                (produk == "B") {
+                jumlah = KolomP * 5330;
+                dskn = KolomP * 0.23;
+                totalall = jumlah - dskn;
+            } else {
+                (produk == "C")
+                jumlah = KolomP * 8653;
+                dskn = KolomP - KolomP
+                totalall = jumlah - dskn;
+            }
+
+            hasil.value = jumlah;
+            diskon.value = dskn;
+            total.value = totalall;
+        }
+
+        var AngkaAcak = [20, 12, 35, 11, 17, 9, 58, 23, 69, 21];
+        document.getElementById("Array").innerHTML = AngkaAcak;
+
+        function urutkanArray() {
+            AngkaAcak.sort(function (a, b) {
+                return a - b
+
+            });
+            document.getElementById("Array").innerHTML = AngkaAcak;
+
+        }
+
+
+    </script>
+</body>
+
+
+
+</html>
